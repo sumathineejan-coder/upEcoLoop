@@ -1,16 +1,13 @@
 services:
   - type: web
-    name: ecoloop-multi-user
+    name: ecoloop
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install
     startCommand: npm start
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
-      - key: DATA_DIR
-        value: /var/data
-    disk:
-      name: ecoloop-data
-      mountPath: /var/data
-      sizeGB: 1
+      - key: DATABASE_URL
+        sync: false

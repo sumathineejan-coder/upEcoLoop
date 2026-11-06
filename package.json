@@ -1,16 +1,7 @@
 {
-  "name": "ecoloop-multi-user",
+  "name": "ecoloop-supabase",
   "version": "1.0.0",
   "private": true,
-  "description": "EcoLoop student and merchant app with shared SQLite database and secure login",
-  "main": "server.js",
-  "scripts": {"start": "node server.js", "dev": "node server.js"},
-  "engines": {"node": ">=20"},
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.8.1",
-    "express": "^4.21.2",
-    "express-rate-limit": "^7.5.0",
-    "helmet": "^8.0.0"
-  }
+  "scripts": {"start":"node server.js", "check":"node --check server.js"},
+  "dependencies": {"bcryptjs":"^2.4.3","dotenv":"^16.4.5","express":"^4.21.2","express-rate-limit":"^7.5.0","helmet":"^8.0.0","pg":"^8.13.3"}
 }
