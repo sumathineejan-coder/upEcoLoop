@@ -20,7 +20,7 @@ input,select{display:block;width:100%;border:1px solid #c9d8bf;border-radius:12p
 const $=id=>document.getElementById(id);
 let mode='student',user=null,pendingCode=null,pendingStudent=null,refreshTimer=null,authView='home';
 const SUPABASE_URL='https://dmwgphdcrwexzzckurgc.supabase.co';
-const SUPABASE_KEY='PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE';
+const SUPABASE_KEY='sb_publishable_qemwMhixfOXKYyAfgufQnw_8EI_atHy';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:false}});
 const authEmail=(id,role)=>`${role}-${id}@accounts.ecoloop.invalid`;
 function fail(error){if(error)throw new Error(error.message||String(error));}
